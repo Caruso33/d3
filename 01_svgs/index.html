@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <title>Adding SVGs to the screen</title>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/d3@5.15.0/dist/d3.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Bootstrap grid setup -->
+    <div class="container">
+      <div class="row">
+        <div id="chart-area">
+          <svg id="canvas" width="850" height="600">
+            <rect class="red" x="0" y="50" width="50" height="50" />
+
+            <circle
+              cx="50"
+              cy="350"
+              r="15"
+              stroke="green"
+              stroke-width="4"
+              fill="yellow"
+            />
+
+            <line
+              x1="300"
+              y1="50"
+              x2="500"
+              y2="600"
+              stroke="black"
+              stroke-width="5"
+            />
+
+            <polygon
+              points="500,500 600,500 550,400"
+              class="red"
+              stroke="brown"
+              stroke-width="5"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- External JS libraries -->
+    <!-- <script src="js/d3.min.js"></script> -->
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <title>Star Break Coffee</title>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://unpkg.com/d3@5.15.0/dist/d3.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png"/></a>
+      </div>
+    </nav>
+
+    <!-- Bootstrap grid setup -->
+    <div class="container">
+      <div class="row">
+        <div id="chart-area"></div>
+        <div id="lessons"></div>
+      </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/scales.js"></script>
+    <script src="js/min_max_extent.js"></script>
+    <script src="js/margin_conventions.js"></script>
+    <script src="js/axes.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
